@@ -1,0 +1,34 @@
+.Contacts
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 100px;
+    flex-wrap: wrap;
+    width: 80vw;
+    margin: 100px auto;
+
+    .Other
+    {
+        width: 100%;
+        font-size: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: gray;
+    }
+    
+}
+
+@media only screen and (max-width: 600px)
+{
+    .Contacts
+    {
+        flex-direction: column;
+        margin: 100px 10px;
+        flex-wrap: unset;
+        width: 93vw;
+        // align-items: center;
+    }
+}

@@ -1,0 +1,104 @@
+@import  '../../../Utilities/_constants.scss' ;
+
+.Header
+{
+    width: 100vw;
+    height: 60px;
+    background-color: $primaryGreen;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0px;
+    z-index: 90;
+    justify-content: center;
+}
+
+.Input
+{
+    text-decoration: none;
+    width: 90%;
+    box-sizing: border-box;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 16px;
+    border: none;
+    &:focus{
+      outline: none;
+    }
+    font-size: 16px;
+
+}
+
+.SearchBar
+{  
+    width: 50%;
+    margin:auto 0px;
+}
+
+.Holder
+{
+    width: 20%;
+    font-size: 30px;
+    color: white;
+    margin: auto 0px;
+}
+
+.Nav
+{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;  
+    .NavLink
+    {
+        position: relative;
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        .Icon
+        {
+           margin-right: 10px;
+        }
+        
+    }
+
+    .Active
+    {
+        color: $primaryYellow;
+    }
+
+ 
+    
+}
+
+@media only screen and (max-width: 600px)
+{
+    .Header
+    {
+        justify-content: space-around;
+    }
+    .Holder
+    {
+        display: none;
+    }
+
+    .SearchBar
+    {
+        width: 60%;
+    }
+
+    .Nav
+    {
+        width: 40%;
+    }
+    .Input
+    {
+        padding-left: 10px;
+        font-size: 14px;
+    }
+}
+
+
+
+

@@ -1,0 +1,74 @@
+@import '../../../Utilities/constants';
+
+.Block
+{
+    width: 50%;
+    height: 70px;
+    border: 2px solid $primaryGreenLight;
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    .Name
+    {
+       width: 40%;
+       font-size: 20px;
+    }
+
+    .Date
+    {
+       width: 40%;
+    }
+
+    .Btn
+    {
+       width: 20%;
+       justify-content: flex-end;
+    }
+    div
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        
+        span
+        {
+            margin-right: 10px;
+            color: $primaryGreen;
+            font-size: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px)
+{
+    .Block
+    {
+        width: 90%;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 200px;
+
+        .div
+        {
+            width: 90%;
+        }
+
+        .Date
+        {
+           width: 100%;
+        }
+
+        .Name
+        {
+            width: 100%;
+        }
+
+        .Btn
+        {
+            width: 100%;
+        }
+    }
+}

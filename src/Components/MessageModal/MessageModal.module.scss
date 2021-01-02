@@ -1,0 +1,78 @@
+@import '../../Utilities//constants';
+
+.MessageForm
+{
+    height: 100%;
+    table
+    {
+        width: 100%;
+        height: 20%;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+
+    th
+    {
+        width: 20%;
+        text-align: start;
+        font-size: 20px;
+        color: $primaryGreen;
+    }
+
+    td
+    {
+        width: 80%;
+        text-align: start;
+        font-size: 20px;
+        padding-left: 20px;
+    }
+
+    .Message
+    {
+        height: 50%;
+        margin-top: 30px;
+        position: relative;
+        textarea
+        {
+            width: 90%;
+            height: 80%;
+            margin-top: 20px;
+            border: 2px solid $primaryGreen;
+            padding: 5px;
+            font-size: 20px;
+        }
+
+        label
+        {
+            position: absolute;
+            top: -22px;
+            left: 22px;
+            font-size: 20px;
+            color: $primaryGreen;
+            font-weight: bold;
+        }
+
+        p
+        {
+            padding-top: 20px;
+            overflow-wrap:break-word;
+            overflow-x: hidden;
+            padding-left: 22px;
+            padding-right: 22px;
+            text-align: start;
+            width: 100%;
+        }
+
+
+        .btn
+        {
+            width: 250px;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            position: absolute;
+            right: 22px;
+            bottom: -45px;
+        }
+    }
+}

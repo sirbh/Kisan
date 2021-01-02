@@ -1,0 +1,55 @@
+@import '../../Utilities/_constants.scss';
+
+
+.Main
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 100px auto;
+    width: 50%;
+}
+.Card
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid $primaryGreenLight;
+    width: 100%;
+    margin: 1%;
+    height: 400px;
+    position: relative;
+    
+
+    
+    .Image
+    {
+        width: 150px;
+        height: 150px;
+        border-radius:50%;
+        background: center/cover no-repeat;
+    }
+
+    .Title
+    {
+        font-size: 18px;
+        width: 90%
+    }
+}
+
+@media only screen and (max-width: 600px)
+{
+    .Main
+    {
+        width: 90%;
+    }
+
+    .Temp
+    {
+        position: absolute;
+        bottom: 40px;
+    }
+}
