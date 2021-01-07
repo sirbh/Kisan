@@ -13,7 +13,7 @@ export default () => {
         backgroundColor:messageType==='success'?'#567E3A':'#e03531'
     }
   return (
-    <BackDrop zValue = {202}>
+    <BackDrop zValue = {204}>
       <div className={cssClasses.Message}>
         <div className={cssClasses.Head} style = {style}>
         <h2>{messageType==='success'?'Success':'Error'}</h2>

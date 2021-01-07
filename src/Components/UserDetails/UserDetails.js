@@ -15,7 +15,7 @@ export default (props)=>{
     const dispatch = useDispatch()
 
     const messageHandler = ()=>{
-        dispatch(ModalActions.showMessage("compose",null,user.firstName+" "+user.lastName,user.phone,user.Id))
+        dispatch(ModalActions.showMessage("compose",null,user.firstName+" "+user.lastName,user.phone,user._id))
     }
     
     useEffect(()=>{

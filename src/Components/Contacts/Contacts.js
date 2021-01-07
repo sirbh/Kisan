@@ -17,8 +17,8 @@ export default () => {
   const error = useSelector(state=>state.contacts.error)
 
   const messageHandler = (id)=>{
-      const user = contacts.find(ele=>ele.Id===id)
-      dispatch(ModalActions.showMessage("compose",null,user.firstName+" "+user.lastName,user.phone,user.Id))
+      const user = contacts.find(ele=>ele._id===id)
+      dispatch(ModalActions.showMessage("compose",null,user.firstName+" "+user.lastName,user.phone,user._id))
   }
 
   const clickHandler = (id)=>{
@@ -30,7 +30,7 @@ export default () => {
   }, [dispatch]);
 
   const cards = contacts.length===0?<div className = {cssClasses.Other}>No Contact Found</div>:  contacts.map((contact,id)=>{
-    return < Card clickHandler = {clickHandler} messageHandler = {messageHandler} name = {contact.firstName+" "+contact.lastName||""} imageUrl = {contact.images} key = {id} Id = {contact.Id}></Card>
+    return < Card clickHandler = {clickHandler} messageHandler = {messageHandler} name = {contact.firstName+" "+contact.lastName||""} imageUrl = {contact.images} key = {id} Id = {contact._id}></Card>
 })
 
   return (
